@@ -1,11 +1,11 @@
 <html>
 <head>
-<title>Page Title</title>
+<title>Layout Tests</title>
 </head>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<h1>Which layouts are we testing?</h1>
+<p>Normal layout, Grid, Flexbox and other interesting layouts...</p>
 
 </body>
 </html>
