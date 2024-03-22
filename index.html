@@ -1,63 +1,57 @@
-<html>
-
-<body>
-  <h1>Nina Ka Ho</h1>
-  <p>Welcome to my website! - Merhaba!</p>
-</body>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<style>
-  h1 {
-    font-size: 50px;
-    color: pink;
-  }
-  h2{
-    font-size: 45px;
-    color: pink;
-  }
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
-  gap: 10px;
-  background-color: pink;
-  padding: 10px;
-}
-
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav>
+    <div class="logo">BADOOM</div>
+    <div class="nav-items">
+      <a href="/">Home</a>
+      <a href="/">Our Story</a>
+      <a href="/">Services</a>
+      <a href="/">Contact</a>
+      <button>BOOK</button>
+    </div>
+  </nav>
+<section class="hero">
+  <div class="hero-container">
+    <div class="column-left">
+      <h1>Are you tired of waiting in line for quality health service?</h1>
+      <p>No more waiting. We provide efficient and quality services at your fingertips.</p>
+      <a href="LearnMore.html">
+      <button>Learn more</button>
+      </a>
+    </div>
+    <div class="column-right">
+      <img src="./nurse.png" alt="nurse smiling"
+      class="hero-image">
+    </div>
+  </div>
+</section>
 
-<h2>Grid Layout</h2>
-
-<p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning:</p>
-
-<div class="grid-container">
-  <div class="item1">Welcome to the Page!</div>
-  <div class="item2">Page Navigation
-  <br> classifications
-  <br> classifications
-  <br> classifications</div>
-  <div class="item3">Main Text
-  <br> Here we do write the main texts, articles, informations and all others.
-  <br> It can also be reserved for pictures to catch attention!</div>  
-  <div class="item4">Right</div>
-  <div class="item5">This page is designed to reference testing project or a learncurve</div>
-</div>
-
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" alt="Ice cream jumping"/>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-col">
+      <h4>company</h4>
+      <ul>
+<li><a href="#">Our Story</a></li>
+<li><a href="#">Our Services</a></li>
+<li><a href="#">Feedback</a></li>
+<li><a href="#">Pricavy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>get help</h4>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Social Media</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
