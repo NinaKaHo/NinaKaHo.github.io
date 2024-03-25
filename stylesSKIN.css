@@ -7,7 +7,7 @@
 
 nav {
     height: 80px;
-    background: #999CAF;
+    background: #DDDCD8;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,10 +29,25 @@ nav a {
 }
 
 nav a:hover {
-    color: #fff;
+    color: #F1A07A;
+}
+@media screen and (max-width: 1000px) {
+    .nav-items{
+width: 100%;
+}
+}
+@media screen and (max-width: 480px) {
+    .nav-items{
+width: 70%;
+}
+}
+@media screen and (max-width: 320px) {
+    .nav-items{
+width: 30%;
+}
 }
 .hero {
-    background: #999CAF;
+    background: #F1A07A;
 
 }
 
@@ -67,7 +82,7 @@ button {
     padding: 1rem 3rem;
     font-size: 1rem;
     border: none;
-    color: #999CAF;
+    color: #F1A07A;
     background: #000000;
     cursor: pointer;
     border-radius: 50px;
@@ -86,9 +101,10 @@ button:hover {
 }
 
 .hero-image {
-    width: 200%;
-    height: 100%;
-    padding-top: 50px;
+    width: 90%;
+    height: 90%;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -103,7 +119,7 @@ button:hover {
 }
 .container{
     max-width: 1170px;
-    background-color: #6C708A;
+    background-color: #DDDCD8;
     margin:auto;
 }
 .row{
@@ -116,14 +132,16 @@ ul{
 }
 
 .footer {
-    background-color: #6C708A;
-    padding: 70px 0;
+    background-color: #DDDCD8;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .footer-col{
 width: 25%;
 align-items: center;
 }
+
 h1 {
     font-size: 50px;
     color: #000;
@@ -133,7 +151,7 @@ h1 {
     color: #000;
   }
   .item1 { grid-area: header; }
-  .item2 { grid-area: menu; }
+  .item2 { grid-area: menu;}
   .item3 { grid-area: main; }
   .item4 { grid-area: right; }
   .item5 { grid-area: footer; }
@@ -145,34 +163,53 @@ h1 {
       'menu main main main right right'
       'menu footer footer footer footer footer';
     gap: 10px;
-    background-color: #999CAF;
+    background-color: #F1A07A;
     padding: 10px;
   }
   
   .grid-container > div {
-    background-color: #6C708A;
+    background-color: #DDDCD8;
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
-    color:#fff;
+    color:#000;
+  }
+  h3{
+    font-size: 35px;
+    font: normal;
+    color: #F1A07A;
+    text-align: center;
+    font-style: normal;
   }
   h4{
     font-size: 20px;
     font: normal;
+    color: #000;
+    text-align: left;
+    font-style: normal;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  h6{
+    font-size: 20px;
+    font: italic;
     color: #fff;
     text-align: left;
     font-style: normal;
   }
   h5{
-    font-size: 15px;
-    font: normal;
-    color: #fff;
+    font-size: 20px;
+    font: italic;
+    color: #F1A07A;
     text-align: left;
     font-style: normal;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: ;
   }
   .feild-image{
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
     border: none;
     padding-top: 10px;
     padding-bottom:10px;
@@ -185,24 +222,35 @@ h1 {
     font-weight: bold;
     font-style: italic;
   }
-  .hospital{
-    width: 100%;
-    height: 100%;
-    border: none;
-    padding-top: 10px;
-    padding-bottom:10px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
   .flex-container{
     display: flex;
     padding-left: 120px;
     padding: 50px;
-    background-color: #6C708A;
+    background-color:  #999CAF;
   }
   .flex-container > div {
-    background-color: #f1f1f1;
+    background-color: #6C708A;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
+  }
+  .booking_container{
+    background-color:#F1A07A;
+    margin: 200px;
+    box-shadow: #000;
+    display: grid;
+    grid-template-columns: 40% 80%;
+  }
+  .booking_time{
+    background-color: #F1A07A;
+    padding: 50px;
+  }
+  .body1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 1px;
+  }
+  p{
+    padding: 5px;
   }
