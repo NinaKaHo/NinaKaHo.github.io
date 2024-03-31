@@ -112,6 +112,7 @@ button:hover {
         grid-template-columns: 1fr;
     }
 }
+
 *{
     margin:0;
     padding:0;
