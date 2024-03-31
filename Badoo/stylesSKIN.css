@@ -1,3 +1,7 @@
+/*over all looks of text*/
+body{
+    background-color:#F1A07A;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,47 +9,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-nav {
-    height: 80px;
-    background: #DDDCD8;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0rem calc((100vw - 1300px) / 2);
-}
-
-.logo {
-    color: #000;
-    font-size: 3rem;
-    font-weight: bold;
-    font-style: italic;
-    padding: 0 2rem;
-}
-
-nav a {
-    text-decoration: none;
-    color: #000000; 
-    padding: 0 1.5rem;
-}
-
-nav a:hover {
-    color: #F1A07A;
-}
-@media screen and (max-width: 1000px) {
-    .nav-items{
-width: 100%;
-}
-}
-@media screen and (max-width: 480px) {
-    .nav-items{
-width: 70%;
-}
-}
-@media screen and (max-width: 320px) {
-    .nav-items{
-width: 30%;
-}
-}
 .hero {
     background: #F1A07A;
 
@@ -54,7 +17,7 @@ width: 30%;
 .hero-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 95vh;
+    height: 80;
     padding: 3rem calc((100vw - 1300px) / 2);
 }
 
@@ -107,12 +70,6 @@ button:hover {
     padding-bottom: 50px;
 }
 
-@media screen and (max-width: 768px) {
-    .hero-container {
-        grid-template-columns: 1fr;
-    }
-}
-
 *{
     margin:0;
     padding:0;
@@ -129,12 +86,12 @@ button:hover {
 }
 ul{
     list-style: none;
-    float: center;
+    align-items: center;
 }
 
 .footer {
     background-color: #DDDCD8;
-    padding-top: 5%;
+    padding-top: 10%;
     padding-bottom: 5%;
 }
 
@@ -144,11 +101,11 @@ align-items: center;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 40px;
     color: #000;
   }
-  h2{
-    font-size: 45px;
+h2{
+    font-size: 35px;
     color: #000;
   }
   .item1 { grid-area: header; }
@@ -157,33 +114,16 @@ h1 {
   .item4 { grid-area: right; }
   .item5 { grid-area: footer; }
   
-  .grid-container {
-    display: grid;
-    grid-template-areas:
-      'header header header header header header'
-      'menu main main main right right'
-      'menu footer footer footer footer footer';
-    gap: 10px;
-    background-color: #F1A07A;
-    padding: 10px;
-  }
-  
-  .grid-container > div {
-    background-color: #DDDCD8;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-    color:#000;
-  }
-  h3{
+
+h3{
     font-size: 35px;
     font: normal;
-    color: #F1A07A;
+    color: #000;
     text-align: center;
     font-style: normal;
   }
-  h4{
-    font-size: 20px;
+h4{
+    font-size: 15px;
     font: normal;
     color: #000;
     text-align: left;
@@ -191,67 +131,266 @@ h1 {
     padding-left: 25px;
     padding-right: 25px;
   }
-  h6{
+h6{
     font-size: 20px;
     font: italic;
     color: #fff;
     text-align: left;
     font-style: normal;
   }
-  h5{
+h5{
     font-size: 20px;
     font: italic;
-    color: #F1A07A;
+    color: #000;
     text-align: left;
     font-style: normal;
     padding-left: 25px;
     padding-right: 25px;
     border-radius: ;
   }
-  .feild-image{
+.feild-image{
     width: 100%;
     height: 100%;
     border: none;
     padding-top: 10px;
     padding-bottom:10px;
     padding-left: 15px;
-
   }
-  .item1{
+  .feild-image-2{
+    width: 40%;
+    height: 20%;
+    border: none;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 5px;
+    float: right;
+  }
+.item1{
     color: #000;
     font-size: 3rem;
     font-weight: bold;
     font-style: italic;
   }
-  .flex-container{
-    display: flex;
-    padding-left: 120px;
-    padding: 50px;
-    background-color:  #999CAF;
-  }
-  .flex-container > div {
-    background-color: #6C708A;
+
+.flex-container > div {
+    background-color: #DDDCD8;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
+    border-style: double;
   }
-  .booking_container{
+.booking_container{
     background-color:#F1A07A;
-    margin: 200px;
-    box-shadow: #000;
+    margin: 10%;
+    box-shadow: rgba(0, 0, 0, .1);
     display: grid;
     grid-template-columns: 40% 80%;
+    border-style: double;
   }
-  .booking_time{
+
+.booking_time{
     background-color: #F1A07A;
-    padding: 50px;
+    padding: 5%;
   }
-  .body1{
+.body1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     color: #000;
     letter-spacing: 1px;
   }
-  p{
+p{
     padding: 5px;
   }
+article{
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color:#F1A07A;
+}
+.article-image{
+    float: left;
+}
+
+
+
+/* making responsive website */
+@media screen and (min-width: 250px){
+    .logo {
+        color: #000;
+        font-size: 2rem;
+        font-weight: bold;
+        font-style: italic;
+        padding: 0 1rem;
+    }
+
+    nav {
+        height: 5%;
+        background: #DDDCD8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem calc((100vw - 1300px) / 2);
+    }
+    
+    
+    nav a {
+        text-decoration: none;
+        color: #000000; 
+        padding-top: 5%;
+        padding-left: 5%;
+        display: inline-block;
+        margin-right: 5%;
+    }
+    
+    nav a:hover {
+        color: #F1A07A;
+    }
+
+    .flex-container{
+        .flex-direction: column;
+      }
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+    .article-image{
+        width: 100%;
+        height: 20%;
+        float: left;
+        }
+ .grid-container{ grid-template-columns: repeat(2, 1fr); }
+
+        
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+    .grid-container{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media screen and (min-width: 960px){
+    .logo {
+        color: #000;
+        font-size: 2rem;
+        font-weight: bold;
+        font-style: italic;
+        padding: 0 2rem;
+    }
+
+    nav {
+        height: 8%;
+        background: #DDDCD8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem calc((100vw - 1300px) / 2);
+    }
+    
+    
+    nav a {
+        text-decoration: none;
+        color: #000000; 
+        padding-top: 5%;
+        padding-left: 5%;
+        display: inline-block;
+        margin-right: 5%;
+    }
+    
+    nav a:hover {
+        color: #F1A07A;
+    }
+    
+    .flex-container{
+        display: flex;
+        padding-left: 120px;
+        padding: 50px;
+        background-color:  #F1A07A;
+        border-style: double;
+      }
+
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header header header header header header'
+          'menu main main main right right'
+          'menu footer footer footer footer footer';
+        gap: 10px;
+        background-color: #F1A07A;
+        padding: 10px;
+      }
+      
+    .grid-container > div {
+        background-color: #DDDCD8;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        color:#000;
+      }
+      .grid-container{ grid-template-columns: auto; }
+}
+
+
+
+@media screen and (min-width: 1200px){
+    .logo {
+        color: #000;
+        font-size: 3rem;
+        font-weight: bold;
+        font-style: italic;
+        padding: 0 2rem;
+    }
+
+    nav {
+        height: 10%;
+        background: #DDDCD8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem calc((100vw - 1300px) / 2);
+    }
+    
+    
+    nav a {
+        text-decoration: none;
+        color: #000000; 
+        padding-top: 5%;
+        padding-left: 5%;
+        display: inline-block;
+        margin-right: 5%;
+    }
+    
+    nav a:hover {
+        color: #F1A07A;
+    }
+    
+    .flex-container{
+        display: flex;
+        padding-left: 120px;
+        padding: 50px;
+        background-color:  #F1A07A;
+        border-style: double;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header header header header header header'
+          'menu main main main right right'
+          'menu footer footer footer footer footer';
+        gap: 10px;
+        background-color: #F1A07A;
+        padding: 10px;
+      }
+      
+    .grid-container > div {
+        background-color: #DDDCD8;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        color:#000;
+      }
+      .grid-container{ grid-template-columns: auto; }
+}
