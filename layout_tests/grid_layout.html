@@ -1,58 +1,52 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-//Grid styles
-
 <style>
-.wrapper {
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
   gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+  background-color: #F2C5F5;
+  padding: 12px;
 }
-.one {
-  grid-column: 1 / 3;
-  grid-row: 1;
-}
-.two {
-  grid-column: 2 / 4;
-  grid-row: 1 / 3;
-}
-.three {
-  grid-column: 1;
-  grid-row: 2 / 5;
-}
-.four {
-  grid-column: 3;
-  grid-row: 3;
-}
-.five {
-  grid-column: 2;
-  grid-row: 4;
-}
-.six {
-  grid-column: 3;
-  grid-row: 4;
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 32px;
 }
 </style>
 </head>
-
 <body>
 
-<h2>Grid Layout</h2>
+<h1>Grid Layout Tryout</h1>
 
-<p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning:</p>
+<p>Here we are testing the grid layout.</p>
 
-//Classifying the grids 
-
-<div class="wrapper">
-  <div class="one">One</div>
-  <div class="two">Two</div>
-  <div class="three">Three</div>
-  <div class="four">Four</div>
-  <div class="five">Five</div>
-  <div class="six">Six</div>
+<div class="grid-container">
+  <div class="item1">Welcome</div>
+  <div class="item2">Here we can find menu page
+  <br> 1st
+  <br> 2nd
+  <br> 3rd</div>
+  <div class="item3">Article about testing
+  <br> xxxx</div>  
+  <div class="item4">Right column</div>
+  <div class="item5">Footer information
+  <br> xoxox</div>
 </div>
 
 </body>
 </html>
+
+
