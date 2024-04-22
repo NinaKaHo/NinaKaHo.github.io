@@ -17,7 +17,7 @@ body{
 .hero-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 80;
+    height: 80%;
     padding: 3rem calc((100vw - 1300px) / 2);
 }
 
@@ -146,7 +146,6 @@ h5{
     font-style: normal;
     padding-left: 25px;
     padding-right: 25px;
-    border-radius: ;
   }
 .feild-image{
     width: 100%;
@@ -182,7 +181,7 @@ h5{
 .booking_container{
     background-color:#F1A07A;
     margin: 10%;
-    box-shadow: rgba(0, 0, 0, .1);
+    box-shadow: rgba(0, 0, 0, 0.1);
     display: grid;
     grid-template-columns: 40% 80%;
     border-style: double;
@@ -192,12 +191,7 @@ h5{
     background-color: #F1A07A;
     padding: 5%;
   }
-.body1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 400;
-    color: #000;
-    letter-spacing: 1px;
-  }
+
 p{
     padding: 5px;
   }
@@ -357,7 +351,8 @@ article{
         text-decoration: none;
         color: #000000; 
         padding-top: 5%;
-        padding-left: 5%;
+        padding-bottom: 2%;
+        padding-left: 3%;
         display: inline-block;
         margin-right: 5%;
     }
