@@ -108,11 +108,11 @@ h2{
     font-size: 35px;
     color: #000;
   }
-  .item1 { grid-area: header; }
-  .item2 { grid-area: menu;}
-  .item3 { grid-area: main; }
-  .item4 { grid-area: right; }
-  .item5 { grid-area: footer; }
+  .badoomW { grid-area: header; }
+  .box { grid-area: menu;}
+  .about { grid-area: main; }
+  .feedback { grid-area: right; }
+  .contactDetails { grid-area: footer; }
   
 
 h3{
@@ -161,7 +161,7 @@ h5{
     border: none;
     padding-top: 10px;
     padding-bottom:10px;
-    padding-left: 5px;
+    padding-right: 30px;
     float: right;
   }
 .item1{
@@ -204,6 +204,7 @@ article{
 .article-image{
     float: left;
 }
+
 
 
 
@@ -254,7 +255,9 @@ article{
         }
  .grid-container{ grid-template-columns: repeat(2, 1fr); }
 
-        
+ p{
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -363,8 +366,6 @@ article{
     
     .flex-container{
         display: flex;
-        padding-left: 120px;
-        padding: 50px;
         background-color:  #F1A07A;
         border-style: double;
       }
@@ -388,4 +389,5 @@ article{
         color:#000;
       }
       .grid-container{ grid-template-columns: auto; }
+
 }
